@@ -11,16 +11,16 @@
 int main() {
     int Z; //izin
     double S; //suhu 
-    unsigned int R; //radiasi
+    int R; //radiasi
     int J; //jam 
-    scanf("%d %d %d %d", &Z,&S,&R,&J);
+    scanf("%d %lf %d %d", &Z,&S,&R,&J);
     if (R>=6){
         printf("TOLAK");
     }
     else if ( S>=390 ){
         printf("KARANTINA");
     }
-    else if (Z==1 && J<6 || J>20) {
+    else if (Z==1 && (J<6 || J>20)) {
         printf("TOLAK");
     }
     else if ( Z == 1) {

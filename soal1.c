@@ -13,7 +13,6 @@ int main() {
     float S; //suhu 
     int R; //radiasi
     int J; //jam 
-    printf("Masukkan Izin Suhu Radiasi Jam: ");
     scanf("%d %d %d %d", &Z,&S,&R,&J);
     if (R>=6){
         printf("TOLAK");

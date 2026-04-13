@@ -6,18 +6,18 @@
  *   Deskripsi           : lokiga if else untuk menentukan apakah boleh masuk sebuah gerbang dengan input izin, suhu, radiasi, jam dengan Output Tolak, Karantina, Periksa, Masuk.
  * 
  */
-#include <stdio.h>
+#include <stdio.h>  
 #include <string.h>  
 int main() {
     int Z; //izin
-    float S; //suhu 
-    int R; //radiasi
+    double S; //suhu 
+    unsigned int R; //radiasi
     int J; //jam 
     scanf("%d %d %d %d", &Z,&S,&R,&J);
     if (R>=6){
         printf("TOLAK");
     }
-    else if (S>=390){
+    else if ( S>=390 ){
         printf("KARANTINA");
     }
     else if (Z==1 && J<6 || J>20) {
